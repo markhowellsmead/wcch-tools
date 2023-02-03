@@ -1,108 +1,43 @@
 {
 	"settings": {
-		"appearanceTools": false,
-		"border": {
-			"color": false,
-			"radius": false,
-			"style": false,
-			"width": false
-		},
+		"appearanceTools": true,
 		"color": {
-			"background": true,
-			"custom": false,
-			"customDuotone": false,
-			"customGradient": false,
-			"link": false,
 			"palette": [
 				{
 					"color": "#000",
+					"name": "Black",
+					"slug": "black"
+				},
+				{
+					"color": "#CC8866",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#B6C4FF",
-					"name": "Secondary",
-					"slug": "secondary"
+					"color": "#995533",
+					"name": "Primary dark",
+					"slug": "primary-dark"
 				},
 				{
-					"color": "#7B61FF",
-					"name": "Tertiary",
-					"slug": "tertiary"
-				},
-				{
-					"color": "#FFE8E8",
-					"name": "Quaternary",
-					"slug": "quarternary"
-				},
-				{
-					"color": "#404040",
-					"name": "Dark gray",
-					"slug": "dark-gray"
-				},
-				{
-					"color": "#808080",
-					"name": "Gray",
-					"slug": "gray"
-				},
-				{
-					"color": "#b0b0b0",
-					"name": "Light gray",
-					"slug": "light-gray"
-				},
-				{
-					"color": "#f0f0f0",
-					"name": "Extra-light gray",
-					"slug": "xlight-gray"
+					"color": "#fff",
+					"name": "White",
+					"slug": "white"
 				}
 			],
-			"text": true
+			"gradients": [
+				{
+					"gradient": "linear-gradient(to bottom right,var(--wp--preset--color--primary) 25%,var(--wp--preset--color--primary-dark) 75%)",
+					"name": "Diagonal primary",
+					"slug": "diagonal-primary"
+				}
+			]
 		},
 		"custom": {
 			"spacing-outer-gutter": "var(--wp--preset--spacing--regular)"
 		},
 		"layout": {
 			"contentSize": "600px",
-			"wideSize": "1200px"
-		},
-		"spacing": {
-			"padding": true,
-			"spacingSizes": [
-				{
-					"size": "0.25rem",
-					"slug": "xsmall",
-					"name": "XS"
-				},
-				{
-					"size": "0.5rem",
-					"slug": "small",
-					"name": "S"
-				},
-				{
-					"size": "1rem",
-					"slug": "regular",
-					"name": "R"
-				},
-				{
-					"size": "2rem",
-					"slug": "medium",
-					"name": "M"
-				},
-				{
-					"size": "3rem",
-					"slug": "large",
-					"name": "L"
-				},
-				{
-					"size": "4rem",
-					"slug": "xlarge",
-					"name": "XL"
-				},
-				{
-					"size": "5rem",
-					"slug": "xxlarge",
-					"name": "XXL"
-				}
-			]
+			"wideSize": "1080px"
 		},
 		"typography": {
 			"customFontSize": false,
@@ -110,70 +45,174 @@
 			"fluid": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-					"name": "System Fonts",
-					"slug": "system-fonts"
+					"fontFace": [
+						{
+							"fontFamily": "Archivo",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/archivo-v18-latin-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Archivo",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/archivo-v18-latin-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Archivo",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/archivo-v18-latin-500.woff2"
+							]
+						},
+						{
+							"fontFamily": "Archivo",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/archivo-v18-latin-500italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Archivo",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/archivo-v18-latin-600.woff2"
+							]
+						},
+						{
+							"fontFamily": "Archivo",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/archivo-v18-latin-600italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Archivo",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/archivo-v18-latin-700.woff2"
+							]
+						},
+						{
+							"fontFamily": "Archivo",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/archivo-v18-latin-700italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Archivo",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/archivo-v18-latin-800.woff2"
+							]
+						},
+						{
+							"fontFamily": "Archivo",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/archivo-v18-latin-900.woff2"
+							]
+						}
+					],
+					"fontFamily": "Archivo, sans-serif",
+					"name": "Archivo",
+					"slug": "archivo"
 				}
 			],
 			"fontSizes": [
 				{
+					"fluid": false,
 					"name": "Small",
 					"size": "14px",
-					"slug": "small",
-					"fluid": false
+					"slug": "small"
 				},
 				{
+					"fluid": {
+						"max": "1rem",
+						"min": "0.9375rem"
+					},
+					"name": "Smaller",
+					"size": "15px",
+					"slug": "smaller"
+				},
+				{
+					"fluid": {
+						"max": "1.125rem",
+						"min": "1rem"
+					},
 					"name": "Regular",
 					"size": "16px",
-					"slug": "regular",
-					"fluid": {
-						"min": "0.9375rem",
-						"max": "1rem"
-					}
+					"slug": "regular"
 				},
 				{
+					"fluid": {
+						"max": "1.4375rem",
+						"min": "1.25rem"
+					},
 					"name": "Medium",
 					"size": "18px",
-					"slug": "medium",
-					"fluid": {
-						"min": "1rem",
-						"max": "1.125rem"
-					}
+					"slug": "medium"
 				},
 				{
+					"fluid": {
+						"max": "1.875rem",
+						"min": "1.5rem"
+					},
 					"name": "Large",
 					"size": "24px",
-					"slug": "large",
-					"fluid": {
-						"min": "1.125rem",
-						"max": "1.5rem"
-					}
+					"slug": "large"
 				},
 				{
+					"fluid": {
+						"max": "2rem",
+						"min": "1.65rem"
+					},
 					"name": "Extra large",
-					"size": "32px",
-					"slug": "xlarge",
-					"fluid": {
-						"min": "1.5rem",
-						"max": "2rem"
-					}
+					"size": "28px",
+					"slug": "xlarge"
 				},
 				{
-					"name": "Huge",
-					"size": "36px",
-					"slug": "xxxlarge",
 					"fluid": {
-						"min": "2rem",
-						"max": "2.25rem"
-					}
+						"max": "2.25rem",
+						"min": "1.875rem"
+					},
+					"name": "Extra extra large",
+					"size": "32px",
+					"slug": "xxlarge"
+				},
+				{
+					"fluid": {
+						"max": "2.75rem",
+						"min": "1.875rem"
+					},
+					"name": "Huge",
+					"size": "40px",
+					"slug": "huge"
 				}
-			],
-			"fontStyle": false,
-			"fontWeight": false,
-			"letterSpacing": false,
-			"lineHeight": false,
-			"textDecoration": false,
-			"textTransform": false
+			]
 		}
 	},
 	"styles": {
@@ -219,7 +258,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--system-fonts)",
+			"fontFamily": "var(--wp--preset--font-family--archivo)",
 			"fontSize": "var(--wp--preset--font-size--regular)",
 			"lineHeight": "1.5"
 		}
