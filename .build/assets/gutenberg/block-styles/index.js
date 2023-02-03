@@ -1,12 +1,12 @@
-// import domReady from '@wordpress/dom-ready';
-import { unregisterBlockStyle } from '@wordpress/blocks';
+import domReady from '@wordpress/dom-ready';
+import { registerBlockStyle, unregisterBlockStyle } from '@wordpress/blocks';
 
-// domReady(() => {
-//     registerBlockStyle('core/heading', {
-//         name: 'special',
-//         label: 'Special',
-//     });
-// });
+domReady(() => {
+	registerBlockStyle('core/cover', {
+		name: 'some-1080',
+		label: 'Social Media',
+	});
+});
 
 window.addEventListener('load', () => {
 	unregisterBlockStyle('core/image', 'default');

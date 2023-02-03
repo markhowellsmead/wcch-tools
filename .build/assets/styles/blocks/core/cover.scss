@@ -1,7 +1,13 @@
 @import '../../_____elements/_stack.scss';
 
 .wp-block-cover {
+	&.is-style-some-1080 {
+		min-height: 1080px !important;
+		max-height: 1080px !important;
+	}
+
 	&__inner-container {
+		position: relative;
 		@extend .h-stack;
 	}
 }
