@@ -1,1 +1,1 @@
-conditionalLoadScript("screenshot-dom",document.querySelectorAll(".wp-block-cover.is-style-some-1080").length);
+((e,t)=>{if(document.querySelectorAll(".wp-block-cover.is-style-some-1080").length){const e=sht_theme.debug?"":".min";let t=document.createElement("script");t.setAttribute("src",`${sht_theme.directory_uri}/assets/scripts/screenshot-dom${e}.js?version=${sht_theme.version}`),document.head.appendChild(t)}})();
