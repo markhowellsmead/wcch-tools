@@ -1,0 +1,39 @@
+.wp-block-sht-standpunkt-teaser {
+    > * {
+        margin: 0;
+
+        + * {
+            margin-top: var(--unit);
+        }
+    }
+
+    &__excerpt {
+        > * {
+            margin: 0;
+
+            + * {
+                margin-top: var(--unit);
+            }
+        }
+    }
+
+    &__figure {
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__title {
+        font-weight: var(--wp--custom--font-weight--semibold);
+
+        a {
+            color: var(--wp--preset--color--primary);
+
+            &:hover {
+                color: var(--wp--preset--color--primary-dark);
+            }
+        }
+    }
+}

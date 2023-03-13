@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "sht/qr-code",
+	"title": "QR code",
+	"category": "widgets",
+	"description": "",
+	"keywords": [],
+	"textdomain": "sha",
+	"attributes": {
+		"url": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"align": false,
+		"html": false
+	},
+	"style": "file:./dist/styles/view.min.css",
+	"editorScript": "file:./dist/scripts/editor.js",
+	"script": "file:./dist/scripts/view.js",
+	"render": "file:./render.php"
+}
